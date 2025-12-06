@@ -1,105 +1,318 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="hi">
 <head>
-<meta charset="UTF-8">
-<title>Arjun Bhai Satta King Result</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Arjun Bhai Satta King - Panel Result</title>
+<meta name="description" content="Satta Result Manager - Panel view. Enter results & save (mobile friendly)." />
+<link rel="icon" href="data:;base64,iVBORw0KGgo=">
 
 <style>
-body {
-    background: black;
-    color: white;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
+  :root{
+    --bg:#0b0b0c; --card:#0f0f10; --muted:#9aa0a6; --accent:#c77bff; --accent-2:#ff5c6c;
+    --text:#e9eef6; --glass: rgba(255,255,255,0.03);
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,"Noto Sans",Arial;
+    background:linear-gradient(180deg,#050505 0%, #0b0b0c 100%);
+    color:var(--text);
+    -webkit-font-smoothing:antialiased;
+  }
 
-.header {
-    background: #800000;
-    padding: 15px;
-    text-align: center;
-    font-size: 24px;
-    font-weight: bold;
-}
+  header{
+    padding:18px 16px; display:flex; gap:12px; align-items:center;
+    border-bottom:1px solid rgba(255,255,255,0.03);
+    background:linear-gradient(0deg, rgba(255,255,255,0.01), rgba(255,255,255,0.02));
+    position:sticky; top:0; z-index:10;
+  }
+  .brand{font-weight:700; font-size:18px; letter-spacing:0.2px}
+  .subtitle{font-size:12px; color:var(--muted); margin-top:3px}
+  .header-right{margin-left:auto; text-align:right}
+  .phone{font-weight:600; color:var(--accent); font-size:14px}
 
-.box {
-    background: #111;
-    margin: 10px;
-    padding: 15px;
-    border-radius: 8px;
-    border: 1px solid #444;
-}
+  main{padding:18px; max-width:920px; margin:0 auto}
 
-.title {
-    font-size: 20px;
-    color: #00ffea;
-    margin-bottom: 8px;
-}
+  .card{
+    background:var(--card); border-radius:12px; padding:14px; box-shadow:0 6px 18px rgba(0,0,0,0.6);
+    border:1px solid rgba(255,255,255,0.02);
+  }
 
-.market-name {
-    font-size: 18px;
-    margin: 6px 0;
-    padding: 8px;
-    background: #222;
-    border-radius: 6px;
-}
+  label{display:block; font-size:12px; color:var(--muted); margin-bottom:6px}
+  input[type="text"], input[type="date"], select{
+    width:100%; padding:11px 12px; border-radius:8px; background:var(--glass); color:var(--text);
+    border:1px solid rgba(255,255,255,0.03);
+    outline:none; font-size:15px;
+  }
+  .row{display:flex; gap:10px; align-items:center; margin-bottom:10px; flex-wrap:wrap}
+  .col-2{flex:0 0 48%}
+  .col-1{flex:0 0 100%}
 
-.chart-box {
-    padding: 10px;
-    background: #222;
-    margin-top: 10px;
-    border-radius: 8px;
-}
+  .btn{
+    display:inline-block; padding:10px 14px; border-radius:10px; cursor:pointer;
+    background:linear-gradient(90deg,var(--accent),var(--accent-2)); color:#fff;
+    border:none; font-weight:700;
+  }
+  .btn.ghost{background:transparent; border:1px solid rgba(255,255,255,0.06); color:var(--text); font-weight:600}
 
-.footer {
-    text-align: center;
-    padding: 20px;
-    color: gray;
-}
+  h2{margin:8px 0 12px; font-size:18px}
+
+  /* list of games */
+  .games{display:grid; gap:10px; margin-top:10px}
+  .game{
+    display:flex; gap:10px; align-items:center; padding:10px; border-radius:10px;
+    background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.02));
+    border:1px solid rgba(255,255,255,0.02);
+  }
+  .game .name{flex:0 0 36%; font-weight:700; color:var(--text)}
+  .game input{flex:1}
+  .game .savebtn{flex:0 0 auto}
+
+  /* Panel table */
+  .panel{margin-top:18px}
+  table{width:100%; border-collapse:collapse; font-size:14px}
+  th, td{padding:10px 8px; text-align:left; border-bottom:1px solid rgba(255,255,255,0.03)}
+  th{color:var(--muted); font-weight:700; font-size:13px}
+  tr:hover td{background:linear-gradient(90deg, rgba(255,255,255,0.01), rgba(255,255,255,0.02))}
+
+  .empty{padding:36px; text-align:center; color:var(--muted)}
+
+  footer{padding:18px; text-align:center; color:var(--muted); font-size:13px}
+
+  @media(max-width:640px){
+    .col-2{flex:0 0 100%}
+    .game .name{flex-basis:40%}
+  }
 </style>
-
 </head>
 <body>
+<header>
+  <div>
+    <div class="brand">Satta Result Manager</div>
+    <div class="subtitle">Arjun Bhai Satta King - Panel View</div>
+  </div>
+  <div class="header-right">
+    <div class="phone">Contact: +91 99910 10721</div>
+    <div class="subtitle">Mobile-friendly • Save locally</div>
+  </div>
+</header>
 
-<div class="header">ARJUN BHAI SATTA KING RESULT</div>
-
-<div class="box">
-    <div class="title">आज के गेम (11 बाज़ार + Haryana Night)</div>
-
-    <div class="market-name">1. Palika Bazar</div>
-    <div class="market-name">2. Prayagraj</div>
-    <div class="market-name">3. Delhi Bazar</div>
-    <div class="market-name">4. Shri Ganesh</div>
-    <div class="market-name">5. Roop Nagar</div>
-    <div class="market-name">6. Faridabad</div>
-    <div class="market-name">7. Fatehpur</div>
-    <div class="market-name">8. Ghaziabad</div>
-    <div class="market-name">9. Noida Night</div>
-    <div class="market-name">10. Gali</div>
-    <div class="market-name">11. Disawar</div>
-    <div class="market-name">12. Haryana Night</div>
-</div>
-
-<div class="box">
-    <div class="title">⭐ Today Results</div>
-    <div class="chart-box">Result coming soon…</div>
-</div>
-
-<div class="box">
-    <div class="title">📌 जली / खाई गई गेम</div>
-    <div class="chart-box">Update Soon…</div>
-</div>
-
-<div class="box">
-    <div class="title">📊 Panel Chart</div>
-    <div class="chart-box">Panel Chart Updating…</div>
-</div>
-
-<div class="box">
-    <div class="title">📘 Satta King Fix News</div>
-    <div class="chart-box">
-        Contact: <b>9991010721 (Arjun Bhai)</b>
+<main>
+  <div class="card" id="main-card">
+    <div style="display:flex;gap:12px;align-items:center;justify-content:space-between;">
+      <div>
+        <h2>Panel Entry</h2>
+        <div class="subtitle">Date select karein aur niche har game ka result daalein. Save karne par panel me add hoga.</div>
+      </div>
+      <div style="text-align:right">
+        <div id="statusMsg" style="font-size:13px;color:var(--muted)"></div>
+      </div>
     </div>
-</div>
 
-<div class="footer">
+    <div style="margin-top:10px" class="row">
+      <div class="col-2">
+        <label for="dateInput">Date (YYYY-MM-DD)</label>
+        <input id="dateInput" type="date" />
+      </div>
+      <div class="col-2">
+        <label>&nbsp;</label>
+        <div style="display:flex; gap:10px;">
+          <button id="saveAllBtn" class="btn">Save All</button>
+          <button id="clearAllBtn" class="btn ghost">Clear All</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="games" id="gamesList" aria-live="polite">
+      <!-- Games will render here -->
+    </div>
+
+    <div class="panel card" style="margin-top:16px;">
+      <h2>Panel Results</h2>
+      <div id="panelArea">
+        <div class="empty" id="emptyPanel">No results saved yet.</div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    © Arjun Bhai Satta King — Contact: +91 99910 10721
+  </footer>
+</main>
+
+<script>
+/*
+  Panel site script
+  - games[] : default games (12)
+  - saves stored in localStorage key "panel_results"
+  - each saved item: {date: 'YYYY-MM-DD', data: {gameName: result, ...}, savedAt: timestamp}
+*/
+
+const games = [
+  "Palika Bazar",
+  "Prayagraj",
+  "Delhi Bazar",
+  "Shri Ganesh",
+  "Roop Nagar",
+  "Faridabad",
+  "Fatehpur",
+  "Ghaziabad",
+  "Noida Night",
+  "Gali",
+  "Disawar",
+  "Haryana Night"
+];
+
+const STORAGE_KEY = "panel_results_v1";
+
+const $ = id => document.getElementById(id);
+
+function formatDateISO(d){
+  const dt = new Date(d || Date.now());
+  const y = dt.getFullYear();
+  const m = String(dt.getMonth()+1).padStart(2,'0');
+  const day = String(dt.getDate()).padStart(2,'0');
+  return `${y}-${m}-${day}`;
+}
+
+function renderGames(){
+  const container = $("gamesList");
+  container.innerHTML = "";
+  games.forEach((g, idx)=>{
+    const div = document.createElement("div");
+    div.className = "game";
+    div.innerHTML = `
+      <div class="name">${(idx+1)}. ${g}</div>
+      <input type="text" placeholder="Result for ${g}" data-game="${g}" id="input-${idx}" />
+      <div class="savebtn">
+        <button class="btn ghost" data-game="${g}" data-idx="${idx}" onclick="saveSingle(event)">Save</button>
+      </div>
+    `;
+    container.appendChild(div);
+  });
+}
+
+function loadSaved(){
+  const raw = localStorage.getItem(STORAGE_KEY);
+  try{
+    const arr = raw ? JSON.parse(raw) : [];
+    return Array.isArray(arr) ? arr : [];
+  }catch(e){ return [];}
+}
+
+function saveToStorage(arr){
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(arr));
+}
+
+function saveSingle(evt){
+  const btn = evt.currentTarget;
+  const g = btn.dataset.game;
+  const idx = btn.dataset.idx;
+  const val = document.querySelector(`#input-${idx}`).value.trim();
+  if(!val){ alert("Result likho pehle."); return; }
+  const date = $("dateInput").value || formatDateISO();
+  addPanelEntry(date, {[g]:val});
+  showStatus("Saved " + g);
+}
+
+function addPanelEntry(date, dataObj){
+  // combine dataObj into single saved entry with date (if already entry for same date, merge)
+  const arr = loadSaved();
+  let found = arr.find(it => it.date === date);
+  if(!found){
+    found = { date: date, data: {}, savedAt: Date.now() };
+    arr.unshift(found); // newest first
+  }
+  // copy fields
+  Object.keys(dataObj).forEach(k => { found.data[k] = dataObj[k]; });
+  found.savedAt = Date.now();
+  saveToStorage(arr);
+  renderPanel();
+}
+
+function saveAll(){
+  const date = $("dateInput").value || formatDateISO();
+  const allData = {};
+  games.forEach((g, idx) => {
+    const v = document.querySelector(`#input-${idx}`).value.trim();
+    if(v) allData[g] = v;
+  });
+  if(Object.keys(allData).length === 0){ alert("Koi result nahin bhara."); return; }
+  addPanelEntry(date, allData);
+  showStatus("All saved for " + date);
+}
+
+function clearAllData(){
+  if(!confirm("Saare saved results clear karne hain?")) return;
+  localStorage.removeItem(STORAGE_KEY);
+  renderPanel();
+  showStatus("All cleared");
+}
+
+function renderPanel(){
+  const panel = $("panelArea");
+  const arr = loadSaved();
+  if(!arr || arr.length === 0){
+    panel.innerHTML = '<div class="empty" id="emptyPanel">No results saved yet.</div>';
+    return;
+  }
+  // build table
+  let html = '<div style="overflow:auto"><table><thead><tr><th>Date</th><th>Results (Panel)</th><th>Actions</th></tr></thead><tbody>';
+  arr.forEach((entry, i) => {
+    const date = entry.date;
+    const keys = Object.keys(entry.data || {});
+    let details = '<div style="display:flex;flex-direction:column;gap:6px">';
+    // show each as "Game: result"
+    keys.forEach(k => {
+      details += `<div style="display:flex;justify-content:space-between;gap:8px"><strong style="color:var(--accent)">${k}</strong><span style="opacity:0.9">${entry.data[k]}</span></div>`;
+    });
+    details += '</div>';
+    html += `<tr data-index="${i}"><td style="width:120px">${date}</td><td>${details}</td><td style="width:120px"><button class="btn ghost" onclick="editEntry('${date}')">Edit</button> <button class="btn" onclick="deleteEntry('${date}')">Delete</button></td></tr>`;
+  });
+  html += '</tbody></table></div>';
+  panel.innerHTML = html;
+}
+
+function editEntry(date){
+  // find entry and fill inputs for quick edit
+  const arr = loadSaved();
+  const e = arr.find(it => it.date === date);
+  if(!e) return alert("Entry not found.");
+  // set date and inputs
+  $("dateInput").value = e.date;
+  // clear inputs first
+  games.forEach((g, idx) => {
+    document.querySelector(`#input-${idx}`).value = e.data[g] || "";
+  });
+  showStatus("Loaded entry for editing: " + date);
+  window.scrollTo({ top: 120, behavior: 'smooth' });
+}
+
+function deleteEntry(date){
+  if(!confirm("Delete this panel entry for " + date + " ?")) return;
+  let arr = loadSaved();
+  arr = arr.filter(it => it.date !== date);
+  saveToStorage(arr);
+  renderPanel();
+  showStatus("Deleted " + date);
+}
+
+function showStatus(text){
+  const el = $("statusMsg");
+  el.textContent = text;
+  setTimeout(()=>{ if(el.textContent === text) el.textContent = ""; }, 3500);
+}
+
+// init
+document.addEventListener("DOMContentLoaded", ()=>{
+  renderGames();
+  // default date
+  $("dateInput").value = formatDateISO();
+  renderPanel();
+
+  $("saveAllBtn").addEventListener("click", saveAll);
+  $("clearAllBtn").addEventListener("click", clearAllData);
+});
+</script>
+</body>
+</html>
