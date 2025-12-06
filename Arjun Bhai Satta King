@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Arjun Bhai Satta King Result</title>
+<style>
+  :root{
+    --bg:#000;
+    --card:#0d0d0d;
+    --accent:#0f9d58;
+    --gold:#d7a600;
+    --muted:#bdbdbd;
+  }
+  body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:#fff}
+  .header{background:#0b0b0b;padding:16px;text-align:center;color:var(--gold);font-size:22px;font-weight:700}
+  .sub{color:var(--accent);text-align:center;margin-top:6px;margin-bottom:12px}
+  .container{padding:12px;max-width:900px;margin:0 auto}
+  .contact{background:transparent;text-align:center;padding:10px 0;color:var(--gold);font-weight:600}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
+  .card{background:var(--card);border:1px solid rgba(255,255,255,0.04);padding:12px;border-radius:10px}
+  .market{color:var(--accent);font-weight:700;font-size:18px}
+  .result{color:#ff6b6b;font-size:28px;font-weight:800;margin-top:8px}
+  .footer{padding:14px;text-align:center;color:var(--muted);margin-top:18px;background:#080808}
+  .btn{display:inline-block;padding:8px 12px;border-radius:6px;background:var(--accent);color:#000;font-weight:700;text-decoration:none}
+  @media (max-width:420px){ .result{font-size:24px} .header{font-size:20px} }
+</style>
+</head>
+<body>
+  <div class="header">🔥 Arjun Bhai Satta King Result 🔥</div>
+  <div class="sub">Daily Satta Results • Mobile friendly</div>
+
+  <div class="container">
+    <div class="contact">संपर्क करें: <b>9991010721</b> — (Results & Updates)</div>
+
+    <!-- GRID OF 12 MARKETS -->
+    <div class="grid">
+      <div class="card">
+        <div class="market">1. Palika Bazar</div>
+        <div id="r1" class="result">--</div>
+      </div>
+
+      <div class="card">
+        <div class="market">2. Prayagraj</div>
+        <div id="r2" class="result">--</div>
+      </div>
+
+      <div class="card">
+        <div class="market">3. Delhi Bazar</div>
+        <div id="r3" class="result">--</div>
+      </div>
+
+      <div class="card">
+        <div class="market">4. Shri Ganesh</div>
+        <div id="r4" class="result">--</div>
+      </div>
+
+      <div class="card">
+        <div class="market">5. Roop Nagar</div>
+        <div id="r5" class="result">--</div>
+      </div>
+
+      <div class="card">
+        <div class="market">6. Faridabad</div>
+        <div id="r6" class="result">--</div>
+      </div>
+
+      <div class="card">
+        <div class="market">7. Fatehpur</div>
+        <div id="r7" class="result">--</div>
+      </div>
+
+      <div class="card">
+        <div class="market">8. Ghaziabad</div>
+        <div id="r8" class="result">--</div>
+      </div>
+
+      <div class="card">
+        <div class="market">9. Noida Night</div>
+        <div id="r9" class="result">--</div>
+      </div>
+
+      <div class="card">
+        <div class="market">10. Gali</div>
+        <div id="r10" class="result">--</div>
+      </div>
+
+      <div class="card">
+        <div class="market">11. Disawar</div>
+        <div id="r11" class="result">--</div>
+      </div>
+
+      <div class="card">
+        <div class="market">12. Haryana Night</div>
+        <div id="r12" class="result">--</div>
+      </div>
+    </div>
+
+    <div style="margin-top:14px;text-align:center">
+      <a class="btn" href="#add">Add Result</a>
+    </div>
+
+    <div class="footer">
+      © 2025 Arjun Bhai • Satta King Result • संपर्क: 9991010721
+    </div>
+  </div>
+
+  <!-- Optional: small script to let you quickly edit numbers from browser console -->
+  <script>
+    // Use this to quickly set results from browser console:
+    // Example: setResult(1,'45')
+    function setResult(i,val){ const el = document.getElementById('r'+i); if(el) el.textContent = val; }
+    // Preload: you can set default sample values (commented)
+    // setResult(1,'--'); setResult(2,'--');
+  </script>
+</body>
+</html>
